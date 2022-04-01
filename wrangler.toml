@@ -1,0 +1,12 @@
+name = "cloudflare-prerender-bug"
+type = "javascript"
+account_id = ""
+zone_id = ""
+workers_dev = true
+
+compatibility_date = "2022-03-31"
+site = { bucket = "./build", entry-point = "./workers-site" }
+
+[build]
+command = "yarn build"
+upload = { format = "service-worker" }

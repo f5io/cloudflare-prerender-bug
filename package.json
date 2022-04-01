@@ -1,0 +1,18 @@
+{
+  "name": "cloudflare-prerender-bug",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "package": "svelte-kit package",
+    "preview": "miniflare ./workers-site/index.js",
+    "prepare": "svelte-kit sync"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-cloudflare-workers": "next",
+    "@sveltejs/kit": "next",
+    "miniflare": "^2.3.0",
+    "svelte": "^3.44.0"
+  },
+  "type": "module"
+}
